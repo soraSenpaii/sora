@@ -17,7 +17,7 @@ client = amino.Client()
 # Barra de progresso de inicialização:
 os.system('clear')
 print('\033[1;36m')
-result = pyfiglet.figlet_format("Carregando\nAguarde", justify="center", width=60, font = "slant" )
+result = pyfiglet.figlet_format("Create\nAcc_sora", justify="center", width=60, font = "slant" )
 print(result)
 with tqdm(total = 100) as progressbar:
 	for i in range(100):
@@ -44,7 +44,7 @@ client.request_verify_code(email=email)
 # Sistema para criar as contas:
 try:
 	password = input('pass >> ')
-	verf = input('كود  التحقق >> ')
+	verf = input('verification code >> ')
 	client.register(nickname='Mr.X', email=email, password=password, verificationCode=verf, deviceId=Device)
 except amino.exceptions.AccountLimitReached:
 	print('هذا الديفايس ايدي قد بلغ الحد الاقصى لانشاء الحسابات قم باستبداله :)')
