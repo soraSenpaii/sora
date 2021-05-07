@@ -43,9 +43,9 @@ client.request_verify_code(email=email)
 
 # Sistema para criar as contas:
 try:
-  password = input('password')
+	senha = input('Sua Senha >> ')
 	codigo = input('Codigo >> ')
-	client.register(nickname='Mr.X', email=email, password=password, verificationCode=verifyCode, deviceId=Device)
+	client.register(nickname='Mr.X', email=com, password=senha, verificationCode=codigo, deviceId=Device)
 except amino.exceptions.AccountLimitReached:
 	print('هذا الديفايس ايدي قد بلغ الحد الاقصى لانشاء الحسابات قم باستبداله :)')
 
