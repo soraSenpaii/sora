@@ -21,7 +21,7 @@ result = pyfiglet.figlet_format("Carregando\nAguarde", justify="center", width=6
 print(result)
 with tqdm(total = 100) as progressbar:
 	for i in range(100):
-		sleep(0.1)
+		sleep(0.0)
 		progressbar.update(1)
 os.system('clear')
 
@@ -55,5 +55,5 @@ result = pyfiglet.figlet_format("SORA", justify="center",width=60, font = "slant
 print(result)
 with tqdm(total = 100) as progressbar:
 	for i in range(100):
-		sleep(0.2)
+		sleep(0.0)
 		progressbar.update(1)
