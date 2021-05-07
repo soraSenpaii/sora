@@ -38,14 +38,14 @@ print(f'DeviceId Gerado >> {client.device_id}')
 Device = input('DeviceId >> ')
 
 # Sistema de mandar código para criar a conta:
-pedir = input('Email  >> ')
+email = input('Email  >> ')
 client.request_verify_code(email=email)
 
 # Sistema para criar as contas:
 try:
 	senha = input('Sua Senha >> ')
 	codigo = input('Codigo >> ')
-	client.register(nickname='Mr.X', email=com, password=senha, verificationCode=codigo, deviceId=Device)
+	client.register(nickname='Mr.X', email=email, password=senha, verificationCode=codigo, deviceId=Device)
 except amino.exceptions.AccountLimitReached:
 	print('هذا الديفايس ايدي قد بلغ الحد الاقصى لانشاء الحسابات قم باستبداله :)')
 
