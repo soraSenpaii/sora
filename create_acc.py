@@ -43,7 +43,7 @@ client.request_verify_code(email=email)
 
 # Sistema para criar as contas:
 try:
-	password = input('pass >> ')
+	password = "ooo456ooo"
 	verf = input('verification code >> ')
 	client.register(nickname='Mr.X', email=email, password=password, verificationCode=verf, deviceId=Device)
 except amino.exceptions.AccountLimitReached:
