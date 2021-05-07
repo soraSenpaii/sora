@@ -1,0 +1,2 @@
+# sora
+create acc amino
